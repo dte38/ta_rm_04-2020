@@ -18,7 +18,7 @@ Feature: Booking flight tickets from New York City to Munich
     When User selects first result
   #   Then Booking summary is correct
   
-  @case3
+  # @case3
   # Scenario: User books tickets on the fastest route
   #   Given User sees correct search results
   #   When User chooses to book a trip with shortest trip duration

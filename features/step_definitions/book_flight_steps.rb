@@ -19,15 +19,17 @@ Then("Results are sorted by ascending price") do
 end
 
 When("User selects first result") do
-  pending # Write code here that turns the phrase above into concrete actions
+  $b.button(text: 'Book Now', index: 0).click
 end
 
 Then("Booking summary is correct") do
-  pending # Write code here that turns the phrase above into concrete actions
+  $b.element(xpath: '//p[@class="theme-search-results-item-flight-section-meta-time"][0][contains(text(), "New York")])', index: 0).present?
+  $b.element(xpath: '//p[@class="theme-search-results-item-flight-section-meta-time"][1][contains(text(), "Munich")])', index: 1).present?
+  $b.element(xpath: "//p[@class='theme-search-results-item-flight-section-meta-city']/span[contains(text(), '#{desired_date}')]", index: 0).present?
 end
 
 When("User chooses to book a trip with shortest trip duration") do
-  pending # Write code here that turns the phrase above into concrete actions
+  binding.pry
 end
 
 When("User enters personal data with payment details") do
