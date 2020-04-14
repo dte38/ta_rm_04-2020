@@ -1,10 +1,4 @@
-require 'watir'
+# default browser to run
+ENV['BROWSER'] = 'chrome'
 
-Before do
-  @browser = Watir::Browser.new :chrome
-  @browser.window.maximize
-end
-
-After do
-  @browser.close
-end
+ENV['PATH'] = ENV['PATH'] + ':' + File.expand_path('../../../bin', __FILE__)

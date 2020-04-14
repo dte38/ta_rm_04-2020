@@ -1,23 +1,3 @@
-Given("User is logged in") do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-Given("User enters starting and end point") do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-Given("User enters number of passengers") do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-Given("User enters date") do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-Given("User performs search") do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
 Then("User sees correct search results") do
   pending # Write code here that turns the phrase above into concrete actions
 end
