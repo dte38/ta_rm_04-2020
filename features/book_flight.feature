@@ -16,12 +16,12 @@ Feature: Booking flight tickets from New York City to Munich
   Scenario: User is presented a correct summary
     Given User sees correct search results
     When User selects first result
-  #   Then Booking summary is correct
+    Then Booking summary is correct
   
-  # @case3
-  # Scenario: User books tickets on the fastest route
-  #   Given User sees correct search results
-  #   When User chooses to book a trip with shortest trip duration
- 	#   And User enters personal data with payment details
- 	#   And User finalizes the booking
- 	#   Then User sees his booking has been made
+  @case3
+  Scenario: User books tickets on the fastest route
+    Given User sees correct search results
+    When User chooses to book a trip with shortest trip duration
+ 	  And User enters personal data with payment details
+ 	  And User finalizes the booking
+ 	  Then User sees his booking has been made
