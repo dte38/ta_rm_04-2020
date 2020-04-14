@@ -1,4 +1,4 @@
-# ta_riskmethods
+# ta_rm_04/2020
 
 ## Prerequisities
 
@@ -39,4 +39,10 @@ You can specify which case you would run by adding its tag
 
 ```bash
 bundle exec cucumber --tags @tag
+```
+
+After failed scenario screenshot is put to:
+
+```bash
+/output/screenshots/
 ```
