@@ -34,3 +34,9 @@ bundle
 ```bash
 bundle exec cucumber
 ```
+
+You can specify which case you would run by adding its tag
+
+```bash
+bundle exec cucumber --tags @tag
+```

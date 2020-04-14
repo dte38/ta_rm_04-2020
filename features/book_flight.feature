@@ -7,15 +7,18 @@ Feature: Booking flight tickets from New York City to Munich
     And User enters number of passengers
     And User performs search
 
+  @case1
   Scenario: User finds cheapest tickets
     Then User sees correct search results
     And Results are sorted by ascending price
 
-  # Scenario: User is presented a correct summary
-  #   Given User sees correct search results
-  #   When User selects first result
+  @case2
+  Scenario: User is presented a correct summary
+    Given User sees correct search results
+    When User selects first result
   #   Then Booking summary is correct
   
+  @case3
   # Scenario: User books tickets on the fastest route
   #   Given User sees correct search results
   #   When User chooses to book a trip with shortest trip duration

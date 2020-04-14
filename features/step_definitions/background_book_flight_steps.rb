@@ -36,7 +36,6 @@ Given("User enters number of passengers") do
   $b.button(class: ['btn', 'btn-white', 'bootstrap-touchspin-up'], index: 2).click
   $b.button(class: ['btn', 'btn-white', 'bootstrap-touchspin-up'], index: 3).click
   $b.button(class: ['btn', 'btn-white', 'bootstrap-touchspin-up'], index: 3).click
-  binding.pry
 end
 
 Given("User performs search") do

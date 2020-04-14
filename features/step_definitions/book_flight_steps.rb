@@ -1,13 +1,21 @@
 Then("User sees correct search results") do
-  pending # Write code here that turns the phrase above into concrete actions
+  $b.element(xpath: '//h3/span[contains(text(), "EWR")]/span[contains(text(), "To")]').present?
+  $b.element(xpath: '//h3/span[contains(text(), "MUC")]').present?
 end
 
 Then("Results are sorted by ascending price") do
-  pending # Write code here that turns the phrase above into concrete actions
-end
+  price_list = []
+  results = $b.elements(class: 'theme-search-results-item-price-tag').size
 
-Given("User sees correct search results") do
-  pending # Write code here that turns the phrase above into concrete actions
+  for i in 0..results do
+    price_list.push ($b.element(class: 'theme-search-results-item-price-tag', index: i).text)[4..]
+    puts price_list[i]
+    break if i == 10
+  end
+
+  if (price_list == price_list.sort)
+    next
+  end
 end
 
 When("User selects first result") do
