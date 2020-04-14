@@ -1,9 +1,8 @@
 Given("User is logged in") do
   $b.goto 'https://www.phptravels.net/login'
 
-  $b.text_field(name: 'username').set('user@phptravels.com')
-  $b.text_field(name: 'password').set('demouser')
-  $b.button(text: 'Login').click
+  login = LoginScreen.new
+  login.loginWith($login_details['username'], $login_details['password'])
 
   $b.h3(text: 'Hi, Demo User').wait_until(&:present?)
 end

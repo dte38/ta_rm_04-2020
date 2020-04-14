@@ -5,4 +5,4 @@ require 'faker'
 require 'pry'
 
 Faker::Config.locale = 'en-GB'
-login_details = YAML.load_file("features/support/login_details.yml")
+$login_details = YAML.load_file("features/support/login_details.yml")
