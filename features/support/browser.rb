@@ -1,6 +1,10 @@
 $b = Watir::Browser.new ENV['BROWSER'].to_sym
 
-# close the browser using ruby global hook
+After do |scenario|
+  $b.cookies.clear
+  $b.refresh
+end
+
 at_exit do
   $b.close
 end
