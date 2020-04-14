@@ -1,11 +1,19 @@
 # ta_riskmethods
-## Ruby version
+
+## Prerequisities
+
+### Ruby version
 
 ```bash
 ruby 2.6.3
 ```
 
-## How to run tests?
+### Chromedriver
+
+Install desired version for your OS from [here](https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver)
+and add it to your `PATH` if needed.
+
+## How to run tests
 
 1. Clone the repo
 2. Set proper ruby version
@@ -14,12 +22,21 @@ ruby 2.6.3
 ```bash
 gem install bundler
 ```
+
 4. Install gems from Gemfile
 
 ```bash
 bundle
 ```
+
 5. Run cucumber
+
 ```bash
 bundle exec cucumber
+```
+
+You can specify which case you would run by adding its tag
+
+```bash
+bundle exec cucumber --tags @tag
 ```
