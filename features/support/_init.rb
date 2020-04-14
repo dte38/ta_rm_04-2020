@@ -1,6 +1,7 @@
 require 'watir'
 require 'fileutils'
 require 'rspec/expectations'
+require 'pry'
 
 # Require model
 page_object_dir = File.expand_path('../../../model', __FILE__)

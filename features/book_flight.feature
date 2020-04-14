@@ -3,13 +3,13 @@ Feature: Booking flight tickets from New York City to Munich
   Background:
     Given User is logged in
     And User enters starting and end point
-    And User enters number of passengers
     And User enters date
+    And User enters number of passengers
     And User performs search
 
   Scenario: User finds cheapest tickets
-  #   Then User sees correct search results
-  #   And Results are sorted by ascending price
+    Then User sees correct search results
+    And Results are sorted by ascending price
 
   # Scenario: User is presented a correct summary
   #   Given User sees correct search results
